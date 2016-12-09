@@ -1,4 +1,5 @@
 /*Main Highlight Color: #33cc59*/
+/*Slightly Darker Highlight Color: #2eb850*/
 /*Dark Gray Color: #262626*/
 body {
     position: relative;
@@ -22,7 +23,7 @@ body {
     color: white;
 }
 .bg-green {
-    background-color: #33cc59;
+    background-color: #2eb850;
     color: white;
 }
 .parallax-window {
@@ -56,6 +57,14 @@ body {
     float: right;
     border-bottom: 1px solid transparent;
     margin: 5px;
+}
+.nav-title {
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 4px;
 }
 .nav-item:hover {
     cursor: pointer;
