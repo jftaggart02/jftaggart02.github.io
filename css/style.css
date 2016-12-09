@@ -1,10 +1,10 @@
 .section {
-    padding: 100px 50px;
+    padding: 150px 50px;
 }
 .bg-white {
     background-color: white;
 }
 .parallax-window {
-    min-height: 500px;
+    min-height: 600px;
     background: transparent;
 }
