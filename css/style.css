@@ -4,17 +4,7 @@
 .bg-white {
     background-color: white;
 }
-.section-parallax-fixed {
-    background: fixed no-repeat center;
-    background-size: cover;
+.parallax-window {
     min-height: 500px;
-}
-.img-1 {
-    background-image: url('https://images3.alphacoders.com/225/thumb-1920-22567.jpg');
-}
-.img-2 {
-    background-image: url('http://wallpapercave.com/wp/Iw471VJ.jpg');
-}
-.img-3 {
-    background-image: url('http://wallpapercave.com/wp/8jKV9GZ.jpg');
+    background: transparent;
 }
