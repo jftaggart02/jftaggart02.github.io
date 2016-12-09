@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>The Carnivores Encyclopedia</title>
 
+    <!--Raleway Font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--Icon-->
     <link rel="icon" type="image/ico" href="C2-Rex.ico">
     <!--Font Awesome CSS:-->
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -12,7 +17,6 @@
     <link rel="stylesheet" href="css/bootstrap-3.3.7/css/bootstrap.min.css">
     <!--CSS file:-->
     <link rel="stylesheet" href="css/style.css">
-
 
     <!--jQuery-->
     <script src="lib/jquery/jquery-3.1.0.min.js"></script>
@@ -25,25 +29,27 @@
     <script src="lib/angular/angular.min.js"></script>
     <!--Angular UI Router-->
     <script src="lib/angular-ui-router/angular-ui-router.min.js"></script>
-    <!--Angular Js file:-->
-    <script src="js/app.js"></script>
 
 </head>
-<body>
-    <div class="section bg-white">
-        <h1>This is a simple parallax demo.</h1>
-        <p>Scroll Down to see effect.</p>
+<body ng-app="app">
+    <div class="top-navbar">
+        <div class="nav-item">Mods</div>
+        <div class="nav-item">Maps</div>
+        <div class="nav-item">Weapons</div>
+        <div class="nav-item">Dinos</div>
+        <div class="nav-item active-nav" ui-sref="home">Home</div>
     </div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg1.png" data-position-y="bottom"></div>
-    <div class="section bg-white">
-        <h1>Keep Going...</h1>
-        <p>Scroll Down a little more...</p>
+    <div class="parallax-window title-img" data-parallax="scroll" data-image-src="img/title.png" data-position-y="top">
+
     </div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg2.png"></div>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg4.png" data-position-y="bottom" data-speed="0.15"></div>
-    <div class="section bg-white">
-        <h1>The End.</h1>
-        <p>This uses the parallax.js library by Pixelcog.</p>
+    <div ui-view></div>
+
+    <div class="footer">
+        <h3>Carnivores Encyclopedia © 2016 Taggart Fish, Inc.</h3>
+        <h5>All Rights Reserved</h5>
     </div>
+
+    <!--Angular Js file:-->
+    <script src="js/app.js"></script>
 </body>
 </html>

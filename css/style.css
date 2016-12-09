@@ -1,10 +1,105 @@
+/*Main Highlight Color: #33cc59*/
+/*Dark Gray Color: #262626*/
+body {
+    position: relative;
+    font-family: 'Raleway', helvetica, sans-serif;
+}
+.text-green {
+    color: green;
+}
 .section {
-    padding: 150px 50px;
+    padding: 100px 50px;
+}
+.section h1 {
+    font-size: 42px;
+    font-weight: 600;
 }
 .bg-white {
     background-color: white;
 }
+.bg-dark-gray {
+    background-color: #262626;
+    color: white;
+}
+.bg-green {
+    background-color: #33cc59;
+    color: white;
+}
 .parallax-window {
-    min-height: 600px;
+    min-height: 500px;
     background: transparent;
+}
+.title-img {
+    height: 700px;
+    background: transparent;
+}
+.page-container {
+    display: block;
+    width: 100%;
+}
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+.nav-item {
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+    display: inline-block;
+    transition: all 0.4s;
+    float: right;
+    border-bottom: 1px solid transparent;
+    margin: 5px;
+}
+.nav-item:hover {
+    cursor: pointer;
+    border-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+.active-nav {
+    border-bottom: 1px solid #33cc59;
+}
+.max-width {
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.img-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #262626;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    transition: all 0.4s;
+}
+.img-card img {
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+}
+.img-card:hover {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    box-shadow: 0 0 15px #262626;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.img-responsive {
+    width: 100%;
+}
+.footer {
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding: 50px;
 }
