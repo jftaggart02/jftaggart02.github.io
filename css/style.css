@@ -49,47 +49,6 @@ body {
     height: 700px;
     background: transparent;
 }
-.page-container {
-    display: block;
-    width: 100%;
-}
-.top-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px;
-}
-.nav-item {
-    padding: 10px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    color: white;
-    display: inline-block;
-    transition: all 0.4s;
-    float: right;
-    border-bottom: 1px solid transparent;
-    margin: 5px;
-}
-.nav-title {
-    display: inline-block;
-    float: left;
-    color: white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding: 4px;
-}
-.nav-item:hover {
-    cursor: pointer;
-    border-color: white;
-    margin: 10px;
-    padding: 5px;
-}
-.active-nav {
-    border-bottom: 1px solid #33cc59;
-}
 .max-width {
     display: block;
     max-width: 1300px;

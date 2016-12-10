@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="app" ng-controller="appCtrl">
 <head>
 
     <meta charset="UTF-8">
@@ -32,14 +32,6 @@
 
 </head>
 <body>
-    <!--<div class="top-navbar">-->
-        <!--<div class="nav-title">Carnivores<br>Encyclopedia</div>-->
-        <!--<div class="nav-item">Mods</div>-->
-        <!--<div class="nav-item">Maps</div>-->
-        <!--<div class="nav-item">Weapons</div>-->
-        <!--<div class="nav-item">Dinos</div>-->
-        <!--<div class="nav-item active-nav" ui-sref="home">Home</div>-->
-    <!--</div>-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -53,10 +45,10 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a ui-sref="home">Home</a></li>
-                    <li><a href="#">Dinos</a></li>
-                    <li><a href="#">Weapons</a></li>
-                    <li><a href="#">Maps</a></li>
-                    <li><a href="#">Mods</a></li>
+                    <li><a ui-sref="dinos">Dinos</a></li>
+                    <li><a ui-sref="weapons">Weapons</a></li>
+                    <li><a ui-sref="maps">Maps</a></li>
+                    <li><a ui-sref="mods">Mods</a></li>
                 </ul>
             </div>
         </div>
