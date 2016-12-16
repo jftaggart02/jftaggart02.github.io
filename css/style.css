@@ -1,9 +1,24 @@
 /*Main Highlight Color: #33cc59*/
 /*Slightly Darker Highlight Color: #2eb850*/
 /*Dark Gray Color: #262626*/
+/*Even Darker Gray Color: #0d0d0d*/
 body {
     position: relative;
     font-family: 'Raleway', helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #33cc59;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: #33cc59;
 }
 .navbar {
     margin-bottom: 0;
@@ -25,6 +40,7 @@ body {
 }
 .section {
     padding: 100px 50px;
+    position: relative;
 }
 .section h1 {
     font-size: 42px;
@@ -41,15 +57,7 @@ body {
     background-color: #33cc59;
     color: white;
 }
-.parallax-window {
-    min-height: 500px;
-    background: transparent;
-}
-.title-img {
-    height: 700px;
-    background: transparent;
-}
-.max-width {
+.max-width-1300 {
     display: block;
     max-width: 1300px;
     margin: 0 auto;
@@ -58,34 +66,81 @@ body {
     display: block;
     text-decoration: none;
     color: white;
-    background-color: #262626;
+    background-color: #0d0d0d;
     padding-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 7px;
     margin-bottom: 40px;
     transition: all 0.4s;
 }
 .img-card img {
     margin-bottom: 20px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
 }
 .img-card:hover {
-    transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    box-shadow: 0 0 15px #262626;
+    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    box-shadow: 0 0 15px #0d0d0d;
+    -webkit-box-shadow: 0 0 15px #0d0d0d;
+    -moz-box-shadow: 0 0 15px #0d0d0d;
+    -o-box-shadow: 0 0 15px #0d0d0d;
     cursor: pointer;
     color: white;
     text-decoration: none;
 }
-.img-responsive {
-    width: 100%;
-}
 .footer {
-    background-color: #262626;
+    background-color: #0d0d0d;
     color: white;
     text-align: center;
     padding: 50px;
 }
 #home {
     box-shadow: -10px 0 50px black;
+}
+.parallax-bg {
+    background: fixed no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.parallax-bg-med {
+    height: 400px;
+}
+.bg1 {
+    background-image: url('../img/bg1.png');
+}
+.bg2 {
+    background-image: url('../img/bg2.png');
+}
+.bg3 {
+    background-image: url('../img/bg3.png');
+}
+#home-img {
+    height: 700px;
+}
+#home-img div {
+    background-image: url('../img/title.png');
+}
+.extra-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.btn-rounded, .btn-rounded-lg {
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    transition: all 0.2s;
+}
+.btn-rounded {
+    border-radius: 14px;
+}
+.btn-rounded-lg {
+    border-radius: 22px;
+}
+.btn-rounded-lg:hover, .btn-rounded:hover {
+    box-shadow: 0 0 15px #0d0d0d;
+    -webkit-box-shadow: 0 0 15px #0d0d0d;
+    -moz-box-shadow: 0 0 15px #0d0d0d;
+    -o-box-shadow: 0 0 15px #0d0d0d;
 }

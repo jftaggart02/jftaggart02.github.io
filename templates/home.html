@@ -1,20 +1,28 @@
 <div id="home">
+    <section skrollr id="home-img">
+        <div class="parallax-bg" data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -150px;"
+             data-anchor-target="#home-img">
+
+        </div>
+    </section>
     <div class="section bg-white text-center">
         <h1>Carnivores Encyclopedia</h1>
         <h2>The Best Place to find information about the <span class="text-green">Carnivores Games</span>.</h2>
     </div>
-    <div class="section bg-dark-gray text-center">
-        <div class="row max-width">
+    <div class="section bg-green text-center">
+        <div class="row max-width-1300">
             <div class="col-md-6">
                 <h1>What are the Carnivores Games?</h1>
             </div>
             <div class="col-md-6">
-                <h3>The Carnivores Games are a collection of games where you get to hunt dinosaurs and other creatures.</h3>
+                <h3>The Carnivores Games are a collection of games where you get to choose your location and weapons and
+                    hunt various dinosaurs and other creatures.</h3>
             </div>
         </div>
     </div>
-    <div class="section bg-green text-center">
-        <h1>Maps</h1>
+    <div class="section bg-dark-gray text-center">
+        <h1>Maps of the Day</h1>
         <h2>Here are a few of the maps featured in Carnivores 2:</h2>
         <br>
         <div class="row">
@@ -43,16 +51,76 @@
                 </a>
             </div>
         </div>
+        <a ui-sref="maps" class="btn btn-default btn-rounded-lg btn-lg" role="button">
+            Go to Maps page
+        </a>
     </div>
-    <div class="section bg-white">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Modding</h1>
-                <h3>Section under Development...</h3>
-            </div>
-            <div class="col-md-6">
+    <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators">
+            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#home-carousel" data-slide-to="1"></li>
+            <li data-target="#home-carousel" data-slide-to="2"></li>
+        </ol>
 
+        <div class="carousel-inner" role="listbox">
+            <div class="item active section extra-padding bg-green text-center">
+                <h1>Fact of the day:</h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
+            </div>
+            <div class="item section extra-padding bg-green text-center">
+                <h1>Fact 2</h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
+            </div>
+            <div class="item section extra-padding bg-green text-center">
+                <h1>Fact 3</h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
             </div>
         </div>
     </div>
+    <div class="section bg-dark-gray text-center">
+        <h1>Dinosaurs of the Day</h1>
+        <h2>Here are a few of the dinosaurs featured in Carnivores 2:</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a ui-sref="dinos" class="img-card">
+                    <img src="img/d1.png" class="img-responsive">
+                    <h4>Image</h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a ui-sref="dinos" class="img-card">
+                    <img src="img/d1.png" class="img-responsive">
+                    <h4>Image</h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a ui-sref="dinos" class="img-card">
+                    <img src="img/d1.png" class="img-responsive">
+                    <h4>Image</h4>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a ui-sref="dinos" class="img-card">
+                    <img src="img/d1.png" class="img-responsive">
+                    <h4>Image</h4>
+                </a>
+            </div>
+        </div>
+        <a ui-sref="dinos" class="btn btn-default btn-rounded-lg btn-lg" role="button">
+            Go to Dinosaurs page
+        </a>
+    </div>
+    <!--This is a sample parallax bg image-->
+    <!--<section skrollr id="home-img-1" class="parallax-bg-med">-->
+        <!--<div class="parallax-bg bg1"-->
+             <!--data-bottom-top="background-position: 50% 0px;"-->
+             <!--data-top-bottom="background-position: 50% -250px;"-->
+             <!--data-anchor-target="#home-img-1">-->
+
+        <!--</div>-->
+    <!--</section>-->
 </div>

@@ -26,6 +26,18 @@ angular.module('app', ['ui.router'])
         $urlRouterProvider.otherwise('/home');
 
     })
+    .directive('skrollr', function() {
+
+        function link(scope, element, attrs) {
+            var s = skrollr.get();
+            s.refresh();
+        }
+
+        return {
+            restrict: 'EA',
+            link: link
+        }
+    })
     .controller('appCtrl', function($scope){
 
     });
