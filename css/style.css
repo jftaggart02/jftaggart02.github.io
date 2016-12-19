@@ -142,3 +142,9 @@ body {
     -moz-box-shadow: 0 0 15px #0d0d0d;
     -o-box-shadow: 0 0 15px #0d0d0d;
 }
+#home-bg-mobile {
+    background: url('../img/title.png') no-repeat center;
+    background-size: cover;
+    height: 700px;
+    display: none;
+}
